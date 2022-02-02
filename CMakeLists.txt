@@ -2,10 +2,6 @@ cmake_minimum_required(VERSION 3.0.2)
 project(robot_state_publisher)
 
 include(CheckCXXCompilerFlag)
-if (NOT CMAKE_CXX_STANDARD)
-    set(CMAKE_CXX_STANDARD 14)
-    set(CMAKE_CXX_STANDARD_REQUIRED ON)
-endif ()
 
 if(MSVC)
   # MSVC does not support the Wextra flag
